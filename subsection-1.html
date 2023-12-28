@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Subsection 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="theme.css">
+    <style>
+    
+@font-face {   font-family: 'Economica';   font-style: normal;   font-weight: 400;   font-display: swap;   src: url(https://fonts.gstatic.com/s/economica/v15/Qw3fZQZaHCLgIWa29ZBrMQ.ttf) format('truetype'); } 
+@font-face {   font-family: 'Open Sans';   font-style: normal;   font-weight: 400;   font-stretch: normal;   font-display: swap;   src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0C4n.ttf) format('truetype'); } 
+.normal_text {
+font-family: Open Sans;
+font-size: 11.0PT;
+color: #000000;
+margin-top: 10.0PT;
+line-height: 1.5;
+direction: ltr;
+}
+h1 {
+font-size: 16.0PT;
+font-weight: bold;
+direction: ltr;
+}
+h2 {
+font-size: 13.0PT;
+font-weight: bold;
+direction: ltr;
+}
+h3 {
+font-size: 12.0PT;
+color: #8c7252;
+font-weight: bold;
+direction: ltr;
+}
+h4 {
+font-family: Trebuchet MS;
+font-size: 11.0PT;
+color: #666666;
+text-decoration-line: underline;
+margin-top: 8.0PT;
+direction: ltr;
+}
+h5 {
+font-family: Trebuchet MS;
+font-size: 11.0PT;
+color: #666666;
+margin-top: 8.0PT;
+direction: ltr;
+}
+h6 {
+font-family: Trebuchet MS;
+font-size: 11.0PT;
+color: #666666;
+font-style: italic;
+margin-top: 8.0PT;
+direction: ltr;
+}
+.title {
+font-family: Economica;
+font-size: 30.0PT;
+font-weight: bold;
+line-height: 1.0;
+direction: ltr;
+}
+.subtitle {
+font-family: Economica;
+font-size: 14.0PT;
+color: #666666;
+line-height: 1.0;
+direction: ltr;
+}
+
+    </style>
+</head>
+<body>
+<header>
+    <div class="hamburger-menu" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <nav>
+    <ul>
+        <li class="menu-item"><a href="index.html">Software Docs</a>
+            <div class="submenu-toggle" onclick="toggleSubmenu(event, 'submenu-1')">&#9662;</div>
+            <ul class="submenu" id="submenu-1">
+        <li><a href="subsection-1.html">Subsection 1</a></li>
+        <li><a href="subsection-2.html">Subsection 2</a></li>
+            </ul>
+            </li>
+        <li><a href="section-2.html">Section 2</a></li>
+        <li><a href="section-3.html">Section 3</a></li>
+        <li><a href="about.html">About</a></li>
+    </ul>
+    </nav>
+</header>
+<div class="content"><div style="clear: both;">&nbsp;</div><br><div class="title" style='line-height: 1.0; direction: ltr; '><span style=''>Subsection 1</span><span style=''>
+</span></div><p class="normal_text" style='direction: ltr; '><img src="img/subsection-1_1.png" alt="horizontal line" style="width: 623.8439999999999px; height: 3.9989999999999997px; margin: 9.0PT 9.0PT 9.0PT 9.0PT; " /><span style=''>
+</span></p><h1 style='direction: ltr; '><span style=''>Details</span><span style='font-size: 16.0PT; '>
+</span></h1><p class="normal_text" style='direction: ltr; '><span style=''>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
+</span></p><p class="normal_text" style='direction: ltr; '><span style=''>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+</span></p><ul><li><span style=''>At vero eos et accusam et justo duo dolores et ea rebum 
+</span></li><li><span style=''>Ut wisi enim ad minim veniam.
+</span></li><li><span style=''>Quis nostrud exerci tation ullamcorper. 
+</span></li><li><span style=''>Suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+</span></li></ul><p class="normal_text" style='direction: ltr; '><span style=''>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan.
+</span></p><h2 style='direction: ltr; '><span style=''>Lorem ipsum dolor
+</span></h2><ul><li><span style=''>At vero eos et accusam et justo duo dolores et ea rebum 
+</span></li><li><span style=''>Ut wisi enim ad minim veniam.
+</span></li><li><span style=''>Quis nostrud exerci tation ullamcorper.
+</span></li></ul><p class="normal_text" style='direction: ltr; '><span style=''>
+</span></p><p class="normal_text" style='direction: ltr; '><span style=''>This page was built from </span><span style='color: #1155cc; '><u>this document</u></span><span style=''>.</span><span style=''>
+</span></p>
+</div><footer>
+    Created for free by
+    <a href="https://gdocweb.com" target="_blank">gdocweb</a>. <br>
+    Convert Google Docs files to full fledged websites <b>for free</b>.
+</footer>
+<script>
+function toggleMenu() {
+    var header = document.querySelector('header');
+    header.classList.toggle('nav-active');
+}
+
+function toggleSubmenu(event, submenuId) {
+    var submenu = document.getElementById(submenuId);
+    var parentLi = submenu.parentElement;
+    parentLi.classList.toggle('submenu-active');
+    event.stopPropagation();
+}
+
+window.onclick = function(event) {
+    var submenus = document.getElementsByClassName("submenu");
+    for (var i = 0; i < submenus.length; i++) {
+        var parentLi = submenus[i].parentElement;
+        if (!parentLi.contains(event.target)) {
+            parentLi.classList.remove('submenu-active');
+        }
+    }
+}
+</script>
+</body>
+</html>
