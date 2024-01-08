@@ -5,6 +5,10 @@ body {
     line-height: 1.6;
 }
 
+.hamburger-menu span {
+    background-color: #333;
+}
+
 a {
     color: #0067cc;
     text-decoration: none;
@@ -47,59 +51,78 @@ footer {
     width: 100%;
 }
 
-.hamburger-menu span {
-    background-color: #333;
+@media (prefers-color-scheme: dark) {
+    body {
+        color: #E0E0E0;
+        background-color: #212121;
+    }
+
+    header {
+        background-color: black;
+    }
+
+    a, a:visited {
+        color: #BBDEFB;
+    }
+
+    header, footer {
+        background: black;
+        color: white;
+    }
+    .hamburger-menu span {
+        background-color: white;
+    }
 }
 header {
-    height: 100%;
-    width: 200px;
+    padding: 1em 0;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 20px;
     position: fixed;
     top: 0;
     left: 0;
-    overflow-x: hidden;
-    padding-top: 20px;
-    padding: 1em 0;
-    display: flow-root list-item;
-    border-right: 1px solid #ddd;
+    width: 100%;
     z-index: 1000;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
+
 header a {
     text-decoration: none;
     font-weight: bold;
     margin-left: 15px;
-    text-align: left;
-    line-height: 2.6;
-    white-space: nowrap;
 }
+
 .content {
-    padding: 20px;
-    margin-left: 210px;
-    overflow: hidden;
+    padding: 50px 20px;
 }
+
 header nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    display: flex;
 }
+
+header nav ul li {
+    position: relative;
+}
+
+header nav ul li ul.submenu {
+    display: none;
+    position: absolute;
+    left: 0;
+    min-width: 150px;
+}
+
+@media (min-width: 769px) {
+    header nav ul li:hover .submenu {
+        display: block;
+    }
+}
+
 header nav ul li .submenu-toggle {
     display: none;
-}
-.submenu {
-    padding-left: 20px;
-    font-size: 80%;
-}
-@media (max-width: 768px) {
-    header {
-        padding-left: 10px;
-        height: auto;
-        width: 100%;
-    }
-    .content {
-        padding: 40px 5px;
-        margin-left: 0px;
-        width: 100%;
-    }
 }
 header .hamburger-menu {
     display: none;
@@ -169,4 +192,25 @@ header .hamburger-menu {
         display: flex;
         align-items: center;
     }
+}
+
+header, header a {
+      color: #ffffff;
+}
+header {
+      background-color: #1976d2;
+}
+@media (prefers-color-scheme: dark) {
+  body {
+        color: #ffffff;
+  }
+  header, header a {
+        color: #ffffff;
+  }
+  header {
+        background-color: #1565c0;
+  }
+  a {
+        color: #ffffff;
+  }
 }
