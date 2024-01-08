@@ -194,23 +194,3 @@ header .hamburger-menu {
     }
 }
 
-header, header a {
-      color: #ffffff;
-}
-header {
-      background-color: #1976d2;
-}
-@media (prefers-color-scheme: dark) {
-  body {
-        color: #ffffff;
-  }
-  header, header a {
-        color: #ffffff;
-  }
-  header {
-        background-color: #1565c0;
-  }
-  a {
-        color: #ffffff;
-  }
-}
