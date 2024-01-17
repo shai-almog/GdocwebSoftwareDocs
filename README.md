@@ -3,6 +3,8 @@
 # gdocweb Software Docs
 This is a demo project for [gdocweb](https://gdocweb.com), a tool that converts Google Docs to GitHub Pages websites. 
 
+This specific demo shows the power of [gdocweb](https://gdocweb.com) as a tool for documentation authoring.
+
 This website can be browsed here: https://shai-almog.github.io/GdocwebSoftwareDocs/
 
 It was generated automatically from the following Google Documents:
